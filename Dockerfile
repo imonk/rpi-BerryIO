@@ -7,7 +7,7 @@ RUN apt-get update && apt-get install -y \
 
 RUN chmod +x berryio_install.sh
 
-RUN ./berryio_install.sh
+RUN ["berryio_install.sh"]
 
 EXPOSE 80
 
