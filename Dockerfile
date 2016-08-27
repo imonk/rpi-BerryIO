@@ -1,4 +1,4 @@
-FROM hypriot/rpi-alpine-scratch
+FROM resin/rpi-raspbian
 
 MAINTAINER DIY NINJA <ninja@diyninja.io>
 
