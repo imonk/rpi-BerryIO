@@ -1,4 +1,4 @@
-FROM resin/rpi-raspbian
+FROM resin/rpi-raspbian:stretch
 
 MAINTAINER DIY NINJA <ninja@diyninja.io>
 
