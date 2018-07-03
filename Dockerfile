@@ -1,11 +1,10 @@
 FROM resin/rpi-raspbian:stretch
 
-MAINTAINER DIY NINJA <ninja@diyninja.io>
+MAINTAINER daTörst <toerst@gmail.com>
 
-RUN apt-get update && apt-get install -y wget
-RUN wget https://raw.github.com/NeonHorizon/berryio/master/scripts/berryio_install.sh
-RUN chmod +x berryio_install.sh
-RUN ./berryio_install.sh
+RUN apt-get update && apt-get install -y apt-utils wget libapache2-mod-authnz-external
+RUN wget https://raw.githubusercontent.com/imonk/berryio/master/scripts/berryio_install.sh; chmod +x berryio_install.sh
+RUN /berryio_install.sh
 
 EXPOSE 80
 
